@@ -1,3 +1,6 @@
 *.yaml
 /raw_data
+/.idea
+/.DS_Store
 /inference.py
+/*/__pycache__
