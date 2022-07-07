@@ -1,8 +1,8 @@
 def component = [
-	preprocess: true
-	hypertuning: false
-	train: true
-	test: false
+	preprocess: true,
+	hyper-tuning: false,
+	train: true,
+	test: false,
 	bento: false
 ]
 pipeline {
