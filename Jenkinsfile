@@ -8,7 +8,6 @@ def component = [
 
 pipeline {
 	agent any
-	parameters {}
 	stages {
 		stage("init") {
 			steps {
