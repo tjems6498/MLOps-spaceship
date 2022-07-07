@@ -1,6 +1,6 @@
 def component = [
 	preprocess: true
-	hyper-tuning: false
+	hypertuning: false
 	train: true
 	test: false
 	bento: false

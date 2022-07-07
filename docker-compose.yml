@@ -4,7 +4,7 @@ services:
   preprocess:
     build: ./preprocess
     container_name: spaceship-preprocess
-  hyper-tuning:
+  hypertuning:
     build: ./hyper-tuning
     container_name: spaceship-hyper-tuning
   train:

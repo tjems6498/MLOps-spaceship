@@ -95,6 +95,7 @@ def upload_model_to_mlflow(model_name, model, train):
         input_example=input_example
     )
 
+
     tags = {"Machin Learning": "spaceship titanic classification"}
     run = client.create_run(experiment_id="2", tags=tags)
     client.log_artifact(run.info.run_id, model_name)
