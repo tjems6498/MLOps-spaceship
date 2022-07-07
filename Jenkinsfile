@@ -1,10 +1,11 @@
 def component = [
-	preprocess: true,
-	hyper-tuning: false,
-	train: true,
-	test: false,
-	bento: false
+		Preprocess: false,
+		Hyper: false,
+		Train: true,
+		Test: false,
+		Bento: false
 ]
+
 pipeline {
 	agent any
 	parameters {}
