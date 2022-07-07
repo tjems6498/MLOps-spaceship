@@ -19,19 +19,15 @@ pipeline {
                 script {
 					component.each{ entry ->
 						stage (entry.key){
-							when {
-								expression {
-									entry.value
-								}
-							}
-							steps {
+							if(entry.value){
 								sh "docker-compose build {$entry.key}"
-							}
+							}	
 						}
 					}
 				}
 			}
 		}
+	
 		stage("Tag and Push") {
 			steps {
                 script {
