@@ -29,7 +29,7 @@ pipeline {
 							if(entry.value){
 								aa = entry.key
 								echo "${aa}ddddddddddd"
-								gv.aa()
+								gv.${aa}()
 							}	
 						}
 					}
