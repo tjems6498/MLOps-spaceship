@@ -1,19 +1,19 @@
 version: "3"
 
 services:
-  Preprocess:
+  preprocess:
     build: ./preprocess
     container_name: spaceship-preprocess
-  Hyper:
+  hyper-tuning:
     build: ./hyper-tuning
     container_name: spaceship-hyper-tuning
-  Train:
+  train:
     build: ./train
     container_name: spaceship-train
-  Test:
+  test:
     build: ./test
     container_name: spaceship-test
-  Bento:
+  bento:
     build: ./bento
     container_name: spaceship-bento
   

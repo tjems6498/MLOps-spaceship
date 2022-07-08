@@ -20,7 +20,7 @@ pipeline {
 					component.each{ entry ->
 						stage (entry.key){
 							if(entry.value){
-								sh "docker-compose build {$entry.key}"
+								sh "docker-compose build {$entry.key.toLowerCase()}"
 							}	
 						}
 					}
