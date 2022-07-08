@@ -27,7 +27,9 @@ pipeline {
 					component.each{ entry ->
 						stage (entry.key){
 							if(entry.value){
-								gv.entry.key()
+								aa = entry.key
+								echo "${aa}ddddddddddd"
+								gv.aa()
 							}	
 						}
 					}
