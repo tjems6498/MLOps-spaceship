@@ -5,7 +5,6 @@ def component = [
 		Test: false,
 		Bento: false
 ]
-
 pipeline {
 	agent any
 	stages {
