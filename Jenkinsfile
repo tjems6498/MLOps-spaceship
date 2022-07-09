@@ -6,6 +6,7 @@ def component = [
 		Bento: false
 ]
 
+
 pipeline {
 	agent any
 	stages {
