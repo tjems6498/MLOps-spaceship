@@ -9,13 +9,6 @@ def component = [
 pipeline {
 	agent any
 	stages {
-		stage("init") {
-			steps {
-				script {
-					gv = load "script.groovy"
-				}
-			}
-		}	
 		stage("Checkout") {
 			steps {
 				checkout scm
@@ -28,7 +21,6 @@ pipeline {
 						stage ("${entry.key} Build"){
 							if(entry.value){
 								var = entry.key
-								// gv."${entry.key}"()
 								sh "docker-compose build ${var.toLowerCase()}"
 							}	
 						}
