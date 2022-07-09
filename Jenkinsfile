@@ -1,7 +1,7 @@
 def component = [
-		Preprocess: true,
-		Hyper: false,
-		Train: true,
+		Preprocess: false,
+		Hyper: true,
+		Train: false,
 		Test: false,
 		Bento: false
 ]
@@ -28,7 +28,7 @@ pipeline {
 				}
 			}
 		}
-		
+
 		stage("Tag and Push") {
 			steps {
                 script {
