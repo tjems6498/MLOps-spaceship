@@ -1,10 +1,11 @@
 def component = [
-		Preprocess: false,
+		Preprocess: true,
 		Hyper: false,
 		Train: true,
 		Test: false,
 		Bento: false
 ]
+
 
 pipeline {
 	agent any
